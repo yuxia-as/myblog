@@ -9,5 +9,6 @@ This is a comprehensive web site of a blog. This site includes front end posting
 ![7](https://user-images.githubusercontent.com/35014021/43377268-d4ad0022-938d-11e8-97eb-18f16189a152.png)
 ![8](https://user-images.githubusercontent.com/35014021/43377269-d6e7bbca-938d-11e8-877d-321a715fa4f0.png)
 ![9](https://user-images.githubusercontent.com/35014021/43377282-d8d4d530-938d-11e8-9b7c-828e8318d0c9.png)
-![h1](https://user-images.githubusercontent.com/35014021/43377310-ddfb811c-938d-11e8-8830-bdfcfa488767.png)
-![h2](https://user-images.githubusercontent.com/35014021/43377312-e07653ae-938d-11e8-839d-8d6c3ac61993.png)
+![h1](https://user-images.githubusercontent.com/35014021/43377420-a25eaf34-938e-11e8-9d88-b67e1d1cb6f8.png)
+
+![h2](https://user-images.githubusercontent.com/35014021/43377422-a4832ba0-938e-11e8-8b27-7ea883581154.png)
