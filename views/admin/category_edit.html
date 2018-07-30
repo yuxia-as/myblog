@@ -1,0 +1,55 @@
+<% include header.html %>
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Add a Category
+                        <small>Category Edit</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Console Center</a></li>
+                        <li><a href="/admin/category">Category</a></li>
+                        <li class="active">Add a Category</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box">
+                                <form action="/admin/category/edit" method="post">
+                                    <div class="box-header">
+                                        <h3 class="box-title"></h3>
+                                        <a href="/admin/category" class="btn btn-default pull-right">Category List</a>
+                                    </div><!-- /.box-header -->
+
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <label for="inputTitle">Category Title</label>
+                                            <input type="text" placeholder="title" name="title" id="inputTitle" value="<%= data.title %>" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputOrderNumber">Order Status</label>
+                                            <input type="text" placeholder="order status" name="order" id="inputOrderNumber" value="<%= data.order %>" class="form-control">
+                                        </div>
+                                        <input type="hidden" name="id" value="<%= data._id %>">
+
+                                    </div><!-- /.box-body -->
+                                    <div class="box-footer clearfix">
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </div><!-- /.box-footer -->
+                                </form>
+
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+
+                </section><!-- /.content -->
+
+                <% include footer.html %>
+
+    </body>
+</html>

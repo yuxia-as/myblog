@@ -1,0 +1,37 @@
+<% include header.html %>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mb-xs-24">
+                    <div class="post-snippet mb64">
+                        <img class="mb24" alt="Post Image" src="/img/blog-single-4.jpg" />
+                        <div class="post-title">
+                            <span class="label"><%= data1.time.toLocaleString() %></span>
+                            <h4 class="inline-block"><%= data1.title %></h4>
+                        </div>
+                        <ul class="post-meta">
+                            <li>
+                                <i class="ti-user"></i>
+                                <span>Author
+                                    <a href="#">Yuxia</a>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="ti-tag"></i>
+                                <span>Label
+                                    <a href="#">Node.js</a>
+                                    <a href="#">Express</a>
+                                    <a href="#">MongoDB</a>
+                                </span>
+                            </li>
+                        </ul>
+                        <hr>
+                        <p><%= data1.content %></p>
+                    </div>
+                    <!--end of post snippet-->
+
+                </div>
+                <!--end of nine col-->
+                <% include footer.html %>
+    </body>
+</html>

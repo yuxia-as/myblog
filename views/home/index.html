@@ -1,0 +1,76 @@
+<% include header.html %>
+            <section>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-9 mb-xs-24">
+                            <% data1.forEach(function(item){ %>
+                            <div class="post-snippet mb64">
+                                <a href="#">
+                                    <img class="mb24" alt="Post Image" src="/img/blog-single-4.jpg" />
+                                </a>
+                                <div class="post-title">
+                                    <span class="label"><%= item.time.toLocaleString() %></span>
+                                    <a href="#">
+                                        <h4 class="inline-block"><%= item.title %></h4>
+                                    </a>
+                                </div>
+                                <ul class="post-meta">
+                                    <li>
+                                        <i class="ti-user"></i>
+                                        <span>Author
+                                            <a href="#">Yuxia</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="ti-tag"></i>
+                                        <span>Label
+                                            <a href="#">Node.js</a>
+                                            <a href="#">Express</a>
+                                            <a href="#">MongoDB</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <p>
+                                    <%= item.summary %>
+                                </p>
+                                <a class="btn btn-sm" href="/post?id=<%= item._id %>">Details</a>
+                            </div>
+                            <!--end of post snippet-->
+                        <% }) %>
+
+                            <div class="text-center">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end of nine col-->
+                        <% include footer.html %>
+    </body>
+</html>

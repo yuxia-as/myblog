@@ -1,0 +1,111 @@
+<div class="col-md-3 hidden-sm">
+    <div class="widget">
+        <h6 class="title">Search</h6>
+        <hr>
+        <form>
+            <input class="mb0" type="text" placeholder="key words" />
+        </form>
+    </div>
+    <!--end of widget-->
+    <div class="widget">
+        <h6 class="title">Author</h6>
+        <hr>
+        <p>
+            Passion in Computer Programming and Web Developing
+        </p>
+    </div>
+    <!--end of widget-->
+    <div class="widget">
+        <h6 class="title">Category</h6>
+        <hr>
+        <ul class="link-list">
+            <% data2.forEach(function(item){ %>
+            <li>
+                <a href="list?category=<%= item.title %>"><%= item.title %></a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+    <!--end of widget-->
+    <div class="widget">
+        <h6 class="title">The latest Posts</h6>
+        <hr>
+        <ul class="link-list recent-posts">
+            <li>
+                <a href="#">DOes google make you stupid</a>
+                <span class="date">September 23, 2015</span>
+            </li>
+            <li>
+                <a href="#">PHP7 - backend language</a>
+                <span class="date">September 19, 2015</span>
+            </li>
+            <li>
+                <a href="#">How to become a full stack enginner</a>
+                <span class="date">September 07, 2015</span>
+            </li>
+        </ul>
+    </div>
+    <!--end of widget-->
+    <div class="widget">
+        <h6 class="title">Latest Comments</h6>
+        <hr>
+        <ul class="link-list recent-comments">
+            <li>
+                <a href="#">New Adventure</a>
+                <span class="date">September 23, 2015</span>
+            </li>
+            <li>
+                <a href="#">Get Involved</a>
+                <span class="date">September 19, 2015</span>
+            </li>
+        </ul>
+    </div>
+    <!--end of widget-->
+</div>
+<!--end of sidebar-->
+</div>
+<!--end of container row-->
+</div>
+<!--end of container-->
+</section>
+<footer class="footer-1 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <img alt="Logo" class="logo" src="img/logo-light1.png" />
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="widget">
+                    <h6 class="title">Links</h6>
+                    <hr>
+                    <ul class="link-list recent-posts">
+                        <li>
+                            <a href="https://nodejs.org/">Node.js</a>
+                        </li>
+                        <li>
+                            <a href="http://www.itbull.cn/">IT Bull</a>
+                        </li>
+                        <li>
+                            <a href="https://www.udacity.com/">Udacity</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end of widget-->
+            </div>
+        </div>
+        <!--end of row-->
+        <div class="row">
+            <div class="col-sm-6">
+                <span class="sub">&copy; HTML is revised based on © 2016 Diamondwang Blog Templates</span>
+            </div>
+            <div class="col-sm-6 text-right">
+
+            </div>
+        </div>
+    </div>
+    <!--end of container-->
+    <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+</footer>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>

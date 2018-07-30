@@ -1,0 +1,54 @@
+<% include header.html %>
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Add Category
+                        <small>Category</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Console Center</a></li>
+                        <li><a href="/admin/category">Category</a></li>
+                        <li class="active">Add a Category</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box">
+                                <form action="/admin/category/add" method="post">
+                                    <div class="box-header">
+                                        <h3 class="box-title"></h3>
+                                        <a href="/admin/category" class="btn btn-default pull-right">Category List</a>
+                                    </div><!-- /.box-header -->
+
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <label for="inputTitle">Title</label>
+                                            <input type="title" name="title" placeholder="title" id="inputTitle" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputOrderNumber">Order Status</label>
+                                            <input type="title" name="order" placeholder="order status" id="inputOrderNumber" value="100" class="form-control">
+                                        </div>
+
+                                    </div><!-- /.box-body -->
+                                    <div class="box-footer clearfix">
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </div><!-- /.box-footer -->
+                                </form>
+
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+
+                </section><!-- /.content -->
+
+                <% include footer.html %>
+
+    </body>
+</html>

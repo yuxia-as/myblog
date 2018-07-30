@@ -1,0 +1,64 @@
+<% include header.html %>
+           <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Post List
+                        <small>posts</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Console Center</a></li>
+                        <li><a href="/admin/article">Post List</a></li>
+                        <li class="active">Add a Post</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box">
+                                <div class="box-header">
+                                    <h3 class="box-title"></h3>
+                                    <a href="" class="btn btn-default pull-right">Post List</a>
+                                </div><!-- /.box-header -->
+                                <div class="box-body">
+                                    <table class="table table-bordered text-center">
+                                        <tbody>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>title</th>
+                                            <th>status</th>
+                                            <th>date</th>
+                                            <th>category</th>
+                                            <th style="width: 20%">operation</th>
+                                        </tr>
+                                        <% data.forEach(function(item,index){ %>
+                                        <tr>
+                                            <td style="width: 10px"><%= index+1 %></td>
+                                            <td><%= item.title %></td>
+                                            <td>posted</td>
+                                            <td><%= item.time.toLocaleString() %></td>
+                                            <td><%= item.cat %></td>
+                                            <td style="width: 20%">
+                                                <a href="" class="btn btn-default" title="edit"><span class="fa fa-edit"></span>Edit</a>
+                                                <a href="" class="btn btn-default" title="delete" onclick="return confirm('Do you want to delete?')"><span class="fa fa-trash-o"></span>Delete</a>
+                                            </td>
+                                        </tr>
+                                        <% }) %>
+                                        </tbody></table>
+                                </div><!-- /.box-body -->
+                                <div class="box-footer clearfix">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section><!-- /.content -->
+
+                <% include footer.html %>
+
+    </body>
+</html>
